@@ -1,0 +1,31 @@
+{
+  "flag": "test",
+  "turn": true,
+  "endpoint": "/cbtg/sk-pharmacy/ad/{adNumber}",
+  "path": {
+    "adNumber": "473480-1"
+  },
+  "response": {
+    "adNumber": "473480-1",
+    "adName": "Закуп услуг по хранению и транспортировке лекарственных средств и медицинских изделий на 2024 год Туркестанская область",
+    "beneficiaryBin": "090340007747",
+    "beneficiaryName": "ТОВАРИЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СК-ФАРМАЦИЯ\"",
+    "startDate": "2024-01-05 09:00:00",
+    "endDate": "2099-01-12 10:00:00",
+    "lots": [
+      {
+        "lotNumber": "4543051-К2",
+        "lotName": "Закуп услуг по хранению и транспортировке лекарственных средств и медицинских изделий способом конкурса",
+        "amount": 556949949.5,
+        "adNumber": "473480-1",
+        "statusName": "Опубликовано (прием заявок)",
+        "statusCode": "PublishedOrderTaking"
+      }
+    ],
+    "statusName": "Опубликовано (прием заявок)",
+    "statusCode": "PublishedOrderTaking"
+  },
+  "response_status_code": 200,
+  "status_name": "OK",
+  "status_code": "OK"
+}

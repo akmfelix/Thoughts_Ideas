@@ -1,0 +1,335 @@
+{
+  "flag": "test",
+  "turn": true,
+  "endpoint": "/cbtg/goszakup/ad/{adNumber}",
+  "path": {
+    "adNumber": "13373954-1"
+  },
+  "response": {
+    "adNumber": "13373954-1",
+    "adName": "Приобретение экстемпоральной рецептуры",
+    "beneficiaryBin": "990740002243",
+    "beneficiaryName": "Республиканское государственное предприятие \"Больница Медицинского центра Управления Делами Президента Республики Казахстан\" на праве хозяйственного ведения",
+    "startDate": "2024-11-20 09:00:00",
+    "endDate": "2099-11-20 10:00:00",
+    "lots": [
+      {
+        "lotNumber": "72284029-ЗЦП1",
+        "lotName": "Кислота уксусная",
+        "amount": 620830,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284064-ЗЦП1",
+        "lotName": "Прокаин",
+        "amount": 336490,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284063-ЗЦП1",
+        "lotName": "Прокаин",
+        "amount": 375000,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284062-ЗЦП1",
+        "lotName": "Прокаин",
+        "amount": 243000,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284061-ЗЦП1",
+        "lotName": "Сульфат цинка (сернокислый цинк)",
+        "amount": 382000,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284060-ЗЦП1",
+        "lotName": "Хлоргексидин",
+        "amount": 1180,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284059-ЗЦП1",
+        "lotName": "Формалин",
+        "amount": 54360,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284058-ЗЦП1",
+        "lotName": "Формалин",
+        "amount": 305760,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284056-ЗЦП1",
+        "lotName": "Формалин",
+        "amount": 1612960,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284055-ЗЦП1",
+        "lotName": "Фенолфталеин",
+        "amount": 136890,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284053-ЗЦП1",
+        "lotName": "Фенолфталеин",
+        "amount": 687750,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284052-ЗЦП1",
+        "lotName": "Метиленовый синий",
+        "amount": 161210,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284051-ЗЦП1",
+        "lotName": "Йод",
+        "amount": 53295,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284048-ЗЦП1",
+        "lotName": "Протаргол",
+        "amount": 1646880,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284047-ЗЦП1",
+        "lotName": "Перекись водорода  ",
+        "amount": 887100,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284045-ЗЦП1",
+        "lotName": "Перекись водорода  ",
+        "amount": 549010,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284044-ЗЦП1",
+        "lotName": "Перекись водорода  ",
+        "amount": 3817195,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284043-ЗЦП1",
+        "lotName": "Перекись водорода  ",
+        "amount": 814083,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284042-ЗЦП1",
+        "lotName": "Натрия хлорид",
+        "amount": 660450,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284041-ЗЦП1",
+        "lotName": "Натрия хлорид, калия хлорид, натрия гидрокарбонат",
+        "amount": 113400,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284039-ЗЦП1",
+        "lotName": "Натрия хлорид, калия хлорид, натрия гидрокарбонат",
+        "amount": 646355,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284038-ЗЦП1",
+        "lotName": "Натрия бромид",
+        "amount": 302000,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284036-ЗЦП1",
+        "lotName": "Сульфат меди",
+        "amount": 343000,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284035-ЗЦП1",
+        "lotName": "Масло",
+        "amount": 3686834,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284032-ЗЦП1",
+        "lotName": "Магния сульфат",
+        "amount": 450360,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284031-ЗЦП1",
+        "lotName": "Серебро коллоидное",
+        "amount": 296496,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284030-ЗЦП1",
+        "lotName": "Кислота уксусная",
+        "amount": 132300,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284025-ЗЦП1",
+        "lotName": "Глюконат кальция",
+        "amount": 283200,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284024-ЗЦП1",
+        "lotName": "Калия хлорид",
+        "amount": 444500,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284023-ЗЦП1",
+        "lotName": "Калия перманганат",
+        "amount": 219735,
+        "adNumber": "13373954-1",
+        "statusCode": "ResultNotCompleted",
+        "statusName": "Закупка не состоялась"
+      },
+      {
+        "lotNumber": "72284026-ЗЦП1",
+        "lotName": "Хлорид кальция",
+        "amount": 417960,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284017-ЗЦП1",
+        "lotName": "Глицерин",
+        "amount": 456512,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284016-ЗЦП1",
+        "lotName": "Вода",
+        "amount": 1789900,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284013-ЗЦП1",
+        "lotName": "Вода",
+        "amount": 229445,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284021-ЗЦП1",
+        "lotName": "Йодид калия",
+        "amount": 620460,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284020-ЗЦП1",
+        "lotName": "Глицерин",
+        "amount": 18590,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284019-ЗЦП1",
+        "lotName": "Глицерин",
+        "amount": 269500,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284012-ЗЦП1",
+        "lotName": "Вазелин",
+        "amount": 788676,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      },
+      {
+        "lotNumber": "72284010-ЗЦП1",
+        "lotName": "Метамизол натрий",
+        "amount": 259200,
+        "adNumber": "13373954-1",
+        "statusCode": "PublishedOrderTaking",
+        "statusName": "Опубликовано (прием заявок)"
+      }
+    ],
+    "statusName": "Опубликовано (прием заявок)",
+    "statusCode": "PublishedOrderTaking"
+  },
+  "response_status_code": 200,
+  "status_name": "OK",
+  "status_code": "OK"
+}

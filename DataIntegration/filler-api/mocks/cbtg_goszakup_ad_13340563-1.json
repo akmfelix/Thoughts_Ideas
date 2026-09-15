@@ -1,0 +1,32 @@
+{
+  "flag": "test",
+  "turn": true,
+  "endpoint": "/cbtg/goszakup/ad/{adNumber}",
+  "path": {
+    "adNumber": "13340563-1"
+  },
+  "response": {
+    "adNumber": "13340563-1",
+    "adName": "Текущий ремонт по монтажу системы видеонаблюдения",
+    "beneficiaryBin": "990340004314",
+    "beneficiaryName": "Коммунальное государственное казенное предприятие \"Риддерский колледж\" управления образования Восточно-Казахстанской области",
+    "startDate": "2024-11-20 09:00:00",
+    "endDate": "2099-11-20 10:00:00",
+    "lots": [
+      {
+        "lotNumber": "64725578-ЗЦП1",
+        "lotName": "Работы по устройству (монтажу) охранной сигнализации/системы видеонаблюдения",
+        "amount": 13794044,
+        "adNumber": "13340563-1",
+        "statusName": "Опубликован (прием заявок)",
+        "statusCode": "PublishedOrderTaking"
+      }
+    ],
+    "statusName": "Опубликовано (прием заявок)",
+    "statusCode": "PublishedOrderTaking"
+  },
+  "response_status_code": 200,
+  "status_name": "OK",
+  "status_code": "OK"
+}
+
