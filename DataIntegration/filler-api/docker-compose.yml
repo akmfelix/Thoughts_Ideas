@@ -1,0 +1,119 @@
+version: '3.9'
+
+x-env-variables: &x-env-variables
+  WARMUP_DELAY: 10
+  HTTP_PROXY: http://proxy.halykbank.nb:8080
+  HTTPS_PROXY: http://proxy.halykbank.nb:8080
+  http_proxy: "http://proxy.halykbank.nb:8080"
+  NO_PROXY: localhost,host.docker.internal
+  SERVICE_PORT: 8000
+  SERVICE_MODE: DEBUG
+
+  # Collector Database
+  COLLECTOR_DATABASE_HOST: filler-postgres
+  COLLECTOR_DATABASE_PORT: 5432
+  COLLECTOR_DATABASE_NAME: filler_db
+  COLLECTOR_DATABASE_LOGIN: user
+  COLLECTOR_DATABASE_PASSWORD: pass
+
+  # Guarantee Database
+  GUARANTEE_DATABASE_HOST: filler-postgres
+  GUARANTEE_DATABASE_PORT: 5432
+  GUARANTEE_DATABASE_NAME: filler_db
+  GUARANTEE_DATABASE_LOGIN: user
+  GUARANTEE_DATABASE_PASSWORD: pass
+
+  # legal-entity-reports Database
+  LEGAL_ENTITY_REPORTS_DATABASE_HOST: filler-postgres
+  LEGAL_ENTITY_REPORTS_DATABASE_PORT: 5432
+  LEGAL_ENTITY_REPORTS_DATABASE_NAME: filler_db
+  LEGAL_ENTITY_REPORTS_DATABASE_LOGIN: user
+  LEGAL_ENTITY_REPORTS_DATABASE_PASSWORD: pass
+
+  # Duat Database
+  DUAT_DATABASE_HOST: filler-postgres
+  DUAT_DATABASE_PORT: 5432
+  DUAT_DATABASE_NAME: filler_db
+  DUAT_DATABASE_LOGIN: user
+  DUAT_DATABASE_PASSWORD: pass
+  DUAT_DATABASE_SCHEMA: public
+
+  # Vertica MDM Profile Database
+  MDM_PROFILE_VERTICA_DATABASE_HOST:
+  MDM_PROFILE_VERTICA_DATABASE_PORT:
+  MDM_PROFILE_VERTICA_DATABASE_USER:
+  MDM_PROFILE_VERTICA_DATABASE_PASSWORD:
+  MDM_PROFILE_VERTICA_DATABASE_NAME:
+  MDM_PROFILE_VERTICA_DATABASE_BACKUP_SERVER_NODE:
+
+  # Hermes Database
+  HERMES_DATABASE_HOST:
+  HERMES_DATABASE_PORT:
+  HERMES_DATABASE_NAME:
+  HERMES_DATABASE_LOGIN:
+  HERMES_DATABASE_PASSWORD:
+
+  # Kafka
+  BOOTSTRAP_SERVERS:
+  SASL_USERNAME:
+  SASL_PASSWORD:
+  TOPIC:
+  GOSZAKUP_TOKEN:
+  DEBUG: "true"
+  API_MODE: "TEST"
+  DEPLOY_ENV: "test"
+  DIRECTUS_URL: "https://sc-dutygraphic-mgmt.directus.halykbank.nb/items/Contact?filter[Value][_contains]={phone}&fields[]=Value"
+
+  # Авторизация
+  AUTH_FPATH: "/local/clients.json"
+
+services:
+  api:
+    build: .
+    container_name: filler-api
+    command: uvicorn "app.main:init_app" --host 0.0.0.0 --port 8000 --log-level debug --reload --factory
+    restart: unless-stopped
+    environment: *x-env-variables
+    ports:
+      - "8000:8000"
+    volumes:
+      - './app:/source/app:rw'
+      - './local:/local:rw'
+    networks:
+      - filler_default
+      - duatdb_local
+    env_file:
+      - .env
+
+  filler-postgres:
+    image: postgres:13.9-alpine3.17
+    container_name: filler-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: filler_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    networks:
+      - filler_default
+
+  filler-flyway:
+    image: flyway/flyway:9.16-alpine
+    command: migrate
+    container_name: flyway-postgres
+    volumes:
+      - './migration:/migration:rw'
+    environment:
+      FLYWAY_USER: user
+      FLYWAY_PASSWORD: pass
+      FLYWAY_URL: jdbc:postgresql://filler-postgres:5432/filler_db
+      FLYWAY_LOCATIONS: filesystem:/migration
+    depends_on:
+      - filler-postgres
+    networks:
+      - filler_default
+
+networks:
+  filler_default:
+  duatdb_local:
+    external: true
